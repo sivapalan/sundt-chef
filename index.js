@@ -12,4 +12,5 @@ const dialogflow = require('./lib/interface/dialogflow');
 exports.getMenuForDay = api.getMenuForDay;
 exports.getMenusForWeek = api.getMenusForWeek;
 exports.updateMenusCache = api.updateMenusCache;
+exports.getTodaysMenuAsSlackMessage = api.getTodaysMenuAsSlackMessage;
 exports.dialogflowChefFulfillment = dialogflow.dialogflowChefFulfillment;
