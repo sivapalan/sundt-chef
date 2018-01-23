@@ -1,19 +1,17 @@
 {
   "name": "sundt-chef",
   "version": "1.0.0",
-  "description": "",
+  "description": "API, CLI and Dialogflow interface to get the lunch menu at Sundtkvartalet",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "Varun Sivapalan",
   "license": "MIT",
-  "devDependencies": {
-    "eslint": "^4.16.0",
-    "eslint-config-google": "^0.9.1"
-  },
+  "private": true,
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "request": "^2.83.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.16.0",
+    "eslint-config-google": "^0.9.1"
   }
 }
