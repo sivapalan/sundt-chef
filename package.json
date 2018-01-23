@@ -11,5 +11,9 @@
   "devDependencies": {
     "eslint": "^4.16.0",
     "eslint-config-google": "^0.9.1"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "request": "^2.83.0"
   }
 }
