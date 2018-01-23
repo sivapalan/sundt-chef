@@ -1,12 +1,14 @@
+#!/usr/bin/env node
+
 'use strict';
 
 const path = require('path');
 
 require('dotenv').config({
-    path: path.join(__dirname, '..', '..', '.env')
+    path: path.join(__dirname, '..', '.env')
 });
 
-const sundtChef = require('../core/sundt-chef');
+const sundtChef = require('../lib/core/sundt-chef');
 
 let dayArg = process.argv.slice(2)[0];
 let day = (dayArg >= 0 && dayArg < 7) ? dayArg : new Date().getDay();
