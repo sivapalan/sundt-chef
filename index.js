@@ -1,5 +1,11 @@
 'use strict';
 
+const dotenv = require('dotenv').config();
+
+if (dotenv.error) {
+    throw dotenv.error;
+}
+
 const api = require('./lib/api');
 const dialogflow = require('./lib/dialogflow');
 
