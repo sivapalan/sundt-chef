@@ -5,6 +5,9 @@ sundt-chef provides serverless functions (API and Dialogflow interface) and a CL
 The menu is fetched from the following URL: [http://sundtkvartalet.eurest.no/ukens-meny/](http://sundtkvartalet.eurest.no/ukens-meny/).
 
 - [Installation](#installation)
+- [CLI](#cli)
+  - [Global Installation](#global-installation)
+  - [Usage](#usage)
 - [Dialogflow Fulfillment Webhook](#dialogflow-fulfillment-webhook)
   - [dialogflowChefFulfillment](#dialogflowcheffulfillment)
 - [API](#api)
@@ -23,6 +26,27 @@ The menu is fetched from the following URL: [http://sundtkvartalet.eurest.no/uke
   Key                         | Description
   :-------------------------- | :-----------------------
   `MEMCACHED_BUCKET_ENDPOINT` | URL for Memcached Bucket
+
+## CLI
+
+### Global Installation
+
+Run the following command from the root of the project to make the CLI available globally:
+```sh
+npm install -g
+```
+
+### Usage
+
+```sh
+sundt-chef [<day-of-week>]
+```
+
+Parameter       | Description
+:-------------- | :-------------------------------------------------------------------------------------
+`<day-of-week>` | Optional. A number representing the day of the week: 1 for Monday, 2 for Tuesday, etc.
+
+If `<day-of-week>` is specified, _sundt-chef_ will fetch the menu for the specified day. Otherwise, it will fetch the menu for the current day.
 
 ## Dialogflow Fulfillment Webhook
 
